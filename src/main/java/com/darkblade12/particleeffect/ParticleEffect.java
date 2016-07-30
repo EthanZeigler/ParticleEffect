@@ -535,8 +535,8 @@ public enum ParticleEffect {
 	 * @return Whether the data type is correct or not
 	 */
 	private static boolean isDataCorrect(ParticleEffect effect, ParticleData data) {
-		return ((effect == BLOCK_CRACK || effect == BLOCK_DUST) && data instanceof BlockData) || (effect == ITEM_CRACK && data instanceof ItemData);
-	}
+        	return ((effect == BLOCK_CRACK || effect == BLOCK_DUST || effect == FALLINGDUST) && data instanceof BlockData) || (effect == ITEM_CRACK && data instanceof ItemData);
+    	}
 
 	/**
 	 * Determine if the color type for a particle effect is correct
